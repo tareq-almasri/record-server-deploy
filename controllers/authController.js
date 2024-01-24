@@ -23,8 +23,7 @@ const createSendToken = (res, status, user) => {
       Date.now() + process.env.COOKIE_EXP * 24 * 60 * 60 * 1000
     ),
     secure: true, // Will still work over http if it is a localhost
-    httpOnly: true,
-    sameSite: "None"
+    httpOnly: true
   };
 
   res.cookie("jwtToken", jwtToken, cookieOptions);
