@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed-records": "node seed/seed_db_records.js",
-    "seed-users": "node seed/seed_db_users.js"
+    "seed-users": "node seed/seed_db_users.js",
+    "start": "node app.js"
   },
   "author": "Zakaria hamdan",
   "license": "ISC",
